@@ -1,0 +1,76 @@
+// Application.html.erb layout
+
+body {
+  background: url(rave_bg_2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.top-bar {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  opacity: .6;
+}
+
+.top_panel {
+  font-size: 3rem;
+  margin-top: 3.25rem;
+  margin-bottom: 1.5rem;
+  background-image: url(black_fade.png);
+  background-repeat: repeat;
+  padding: 5px;
+  color: white;
+}
+
+.left_side_panel {
+  background-image: url(black_fade.png);
+  background-repeat: repeat;
+  margin-top: 1rem;
+  padding: 5px;
+  color: white;
+}
+
+.avatar_position {
+  margin-top: 4rem;
+}
+
+.black_fade {
+  background-image: url(black_fade.png);
+  background-repeat: repeat;
+  padding: 5px;
+  color: white;
+}
+
+.main_content_row_margins {
+  margin-top: 4rem;
+}
+
+.full_screen {
+  max-width: 90%;
+}
+
+.full_screen_main_content {
+  max-width: 90%;
+}
+
+.comments_sizing {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: .25rem;
+}
+
+.comments_position {
+  padding-left: 2rem;
+}
+
+.devise_accounts {
+  color: white;
+  margin-top: 4rem;
+}
+
+label {
+  color: white;
+}
