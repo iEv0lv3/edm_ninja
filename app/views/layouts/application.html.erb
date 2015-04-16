@@ -4,6 +4,7 @@
   <title>EDM Ninja</title>
   <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -17,6 +18,7 @@
     <section class="top-bar-section">
       <ul class="right">
         <%- if current_user -%>
+          <li><%= link_to current_user.username, edit_user_registration_path %></li>
           <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
         <%- else -%>
           <li><%= link_to 'Sign Up', new_user_registration_path %></li>
@@ -27,9 +29,13 @@
   </nav>
 
   <%- flash.each do |key, value| -%>
-    <div class="flash flash-<%= key %>">
-      <%= value %>
+  <div class="row">
+    <div class="large-3 columns">
+        <div class="flash flash-<%= key %>">
+          <%= value %>
+      </div>
     </div>
+  </div>
   <%- end -%>
 
   <%= yield %>
@@ -42,16 +48,13 @@
       <hr/>
       <div class="row">
         <div class="large-5 columns">
-          <p>© Copyright no one at all. Go to town.</p>
+          <p>© Dance Music Ninja</p>
         </div>
         <div class="large-7 columns">
           <ul class="inline-list right">
             <li><a href="#">Section 1</a></li>
             <li><a href="#">Section 2</a></li>
             <li><a href="#">Section 3</a></li>
-            <li><a href="#">Section 4</a></li>
-            <li><a href="#">Section 5</a></li>
-            <li><a href="#">Section 6</a></li>
           </ul>
         </div>
       </div>
