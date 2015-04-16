@@ -15,4 +15,11 @@
 //= require foundation
 //= require_tree .
 
+//fadeout flash messages
+$('.flash').fadeIn(function() {
+    setTimeout(function() {
+        $('.flash').fadeOut();
+    }, '3000');
+});
+
 $(function(){ $(document).foundation(); });
